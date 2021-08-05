@@ -6,6 +6,6 @@ cordova plugin add https://github.com/thanaphonpra/cordova-plugin-marketingcloud
 
 
 # Note
-This repository modify from https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin to support the cordova android 10.0.0
-If the original plugin already support the cordova android 10.0.0 you not need to use this repository anymore.
+This repository modify from https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin to support the cordova android 10.0.0(API:30)
+If the original plugin support the cordova android 10.0.0(API:30) already you not need to use this repository anymore.
 
