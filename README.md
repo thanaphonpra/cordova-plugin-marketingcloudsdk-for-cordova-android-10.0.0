@@ -1,0 +1,1 @@
+# cordova-plugin-marketingcloudsdk-for-Cordova-Android-10.0.0
