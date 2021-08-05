@@ -1,0 +1,47 @@
+{
+  "name": "cordova-plugin-marketingcloudsdk",
+  "version": "7.4.0",
+  "description": "A Cordova Plugin to access the native Salesforce Marketing Cloud MobilePush SDKs",
+  "author": "Salesforce Marketing Cloud",
+  "license": "BSD-3-Clause",
+  "cordova": {
+    "id": "cordova-plugin-marketingcloudsdk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "salesforce",
+    "mobilepush",
+    "marketingcloud",
+    "marketingcloudsdk"
+  ],
+  "scripts": {
+    "precommit": "npm run format && npm test && npm run gen-docs && git add README.md",
+    "gen-docs": "jsdoc2md --template \"jsdoc2md/TEMPLATE.md\" \"www/**/*.js\" --plugin \"dmd-plugin-cordova-plugin\" > README.md",
+    "test": "npm run eslint",
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src",
+    "format": "clang-format -i -style=file src/android/MCCordovaPlugin.java src/android/MCInitProvider.java src/android/MCSdkConfig.java src/ios/AppDelegate+MCCordovaPlugin.h src/ios/AppDelegate+MCCordovaPlugin.m src/ios/MCCordovaPlugin.h src/ios/MCCordovaPlugin.m tests/ios/MCCordovaPluginLib/Tests/Tests.m www/MCCordovaPlugin.js"
+  },
+  "devDependencies": {
+    "clang-format": "^1.4.0",
+    "dmd-plugin-cordova-plugin": "^0.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.10.1",
+    "jsdoc-to-markdown": "^5.0.3"
+  }
+}
