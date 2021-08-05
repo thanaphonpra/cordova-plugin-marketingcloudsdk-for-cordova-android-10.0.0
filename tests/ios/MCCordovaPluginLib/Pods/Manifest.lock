@@ -1,0 +1,24 @@
+PODS:
+  - Cordova (4.5.4)
+  - MarketingCloudSDK (6.4.2)
+  - OCMock (3.4.3)
+
+DEPENDENCIES:
+  - Cordova (~> 4.5.4)
+  - MarketingCloudSDK (~> 6.2)
+  - OCMock (~> 3.4.3)
+
+SPEC REPOS:
+  trunk:
+    - Cordova
+    - MarketingCloudSDK
+    - OCMock
+
+SPEC CHECKSUMS:
+  Cordova: 90a337977b8667a80483f559268c82062b1183da
+  MarketingCloudSDK: 78bdce808556398b0f15e971a03002803a029502
+  OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
+
+PODFILE CHECKSUM: 6b7eee1c9817dcfef14acbf44e53c649bc20005f
+
+COCOAPODS: 1.10.0
